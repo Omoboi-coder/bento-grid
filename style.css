@@ -1,0 +1,409 @@
+* {
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+body {
+    background-color: hsl(0, 0%, 100%);
+    padding: 10px;
+    margin: 10px;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-content: center;
+}
+
+.container {
+    display: grid;
+    gap: 20px;
+    max-width: 1050px;
+    min-height: 100vh;
+    margin: 10px auto;
+    margin-bottom: 30px;
+    align-content: center;
+    grid-template-columns: repeat(3, 120px);
+    grid-template-rows: repeat(3, 120px);
+    grid-template-areas: 
+  "card-1 card-1 card-2 card-2 card-2 card-2  card-3  card-3"
+  "card-1 card-1 card-2 card-2 card-2 card-2  card-3  card-3"
+  "card-1 card-1 card-5 card-5 card-6 card-6  card-3  card-3"
+  "card-4 card-4 card-5 card-5 card-6 card-6  card-3  card-3"
+  "card-4 card-4 card-7 card-7 card-8 card-8  card-8  card-8"
+  "card-4 card-4 card-7 card-7 card-8 card-8  card-8  card-8"
+  ;
+
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    
+   
+}
+
+ h1 {
+    font-size: 47px;
+    margin-bottom: 0px;
+    text-align: center;
+   
+}
+
+ h2 {
+    font-size: 18px;
+    margin-bottom: 0px;
+}
+
+
+.x {
+    color: hsl(39, 100%, 71%);
+
+}
+
+
+/* Section 1: Create and Schedule */
+.card-1 {
+    grid-area: card-1;
+    padding: 20px;
+    padding-bottom: 70px;
+    padding-left: 35px;
+    background-color: #fff3e0;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+
+.card-1  span {
+    color: hsl(256, 67%, 59%)
+}
+
+
+
+
+/* Section 2: Social Media 10x Faster */
+.card-2 {
+    grid-area: card-2;
+    background-color: hsl(256, 67%, 59%);
+    color: #fff;
+    
+}
+
+.five-stars{
+    margin-bottom: 0px;
+}
+
+.para-2{
+    margin-top: 5px;
+}
+
+/* Section 3: Schedule to Best Time */
+.card-3 {
+    grid-area: card-3;   
+    background-color: hsl(254, 88%, 90%);
+    
+   
+    
+}
+
+.para-3{
+    font-size: 28px;
+    font-weight: bold;
+    justify-content: center;
+    padding-left: 25px;
+}
+
+.para-4{
+    font-size: 18px;
+    padding-left: 30px;
+    align-items: center;
+    
+}
+
+.schedule-post{
+    margin-left: 60px;
+    width: 250px;
+    height: 100%;
+    
+
+}
+
+/* Section 4: Write Content Using AI */
+.card-4 {
+    grid-area: card-4;
+    background-color: hsl(39, 100%, 71%)
+}
+
+.para-5{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 30px;
+    padding-bottom: 25px;
+}
+
+.image-ai{
+    margin-bottom: 25px;
+}
+
+/* Section 5: Manage Multiple Accounts */
+.card-5 {
+    grid-area: card-5;
+    
+}
+
+.image-multiple{
+    padding-top: 10px;
+    padding-left: 100px;
+}
+
+.para-6{
+    font-size: 25px;
+    font-weight: bold;
+    padding-left: 20px;
+    
+}
+
+
+/* Section 6: Maintain Consistent Schedule */
+.card-6 {
+    grid-area: card-6;
+    background-color: hsl(39, 100%, 71%);
+}
+
+.para-7{
+    font-size: 30px;
+    font-weight: bold;
+    padding-left: 20px;
+    padding-top: 20px;
+    margin-bottom: 0px;
+}
+
+.consistent-schedule{
+    margin-top: 0px;
+
+
+}
+
+/* Section 7: 56% Faster Growth */
+.card-7 {
+    grid-area: card-7;
+   
+    background-color: hsl(0, 0%, 100%);
+}
+
+h2{
+    font-size: 50px;
+    padding-right: 70px;
+}
+
+.para-8{
+    padding-right: 40px;
+}
+
+/* Section 8: Grow Followers */
+.card-8 {
+    grid-area: card-8;
+    background-color:  hsl(256, 67%, 59%);
+    display: flex;
+    flex-direction: row; 
+    
+}
+
+.grow-followers{
+   padding: 20px;
+   padding-right: 0;
+   
+}    
+
+.para-9{
+    color: hsl(0, 0%, 100%);
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: 
+            "card-1 card-1"
+            "card-2 card-3"
+            "card-4 card-5"
+            "card-6 card-7"
+            "card-8 card-8";
+    }
+    .card {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    h2 {
+        font-size: 20px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        margin: 10px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        height: fit-content;
+        row-gap: 30px;
+        grid-template-areas: 
+            
+            "card-2"
+            "card-5"
+            "card-6"
+            "card-3"
+            "card-8"
+            "card-7"
+            "card-1"
+            "card-4";
+        
+    }
+    
+    .card-2{
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-left: 0px ;
+        margin-right: 0px;
+       
+
+    }
+
+    h1{
+        font-size: 50px;
+        padding-right: 5px;
+        padding-left: 5px;
+        margin-left:0px ;
+        margin-right: 0px;
+       
+    }
+    
+
+    
+.five-stars{
+    width: 200px;
+    margin-bottom: 0px;
+}
+
+.para-2{
+    font-size: 20px;
+    margin-top: 5px;
+    font-weight: lighter;
+}
+    
+    .image-multiple{
+        padding-top: 10px;
+        padding-right: 100px;
+        width: 550px;
+    }
+    
+    .para-6{
+        font-size: 25px;
+        font-weight: bold;
+        margin-right: 20px;
+    }
+
+    
+    .para-7{
+    font-size: 25px;
+    padding: 0;
+    margin-right: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+    .consistent-schedule{
+    margin-top: 20px;
+    margin-right: 60px;
+    padding: 0;
+}
+
+    .para-3{
+    font-size: 30px;
+    justify-content: center;
+    margin-right: 50px;
+    
+}
+
+    .para-4{
+    font-size: 25px;
+    margin-right: 50px;
+    
+    
+}
+
+    .schedule-post{
+    width: 100%;
+    padding: 10px;
+    margin-right: 56px
+    
+}
+
+    .card-8 {
+    display: flex;
+    flex-direction: column; 
+    
+}
+    .para-9{
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    padding-top: 0px;
+    font-size: 35px;
+    font-weight: 500;
+    text-align: center;
+     
+}
+
+h2{
+    font-size: 50px;
+    font-weight: lighter;
+    margin-top: 0px;
+    margin-right: 150px;
+}
+
+.para-8{
+    font-size: 18px;
+    margin-right: 120px;
+}
+
+.audience-growth{
+    margin-right: 150px;
+}
+  
+
+.para-1{
+    margin-left: 20px;
+}
+
+
+.para-5{
+    font-size: 30px;
+    margin-right: 50px;
+    margin-bottom: auto;
+}
+
+.image-ai{
+    margin-bottom: 35px;
+    margin-right: 50px;
+    width: 250px; ;
+}
+
+
+    
+
+}
+
+
+
